@@ -31,4 +31,10 @@ sed '1s/$/&\tNAME/; 2,$s/$/&\tVALVUE/' file.txt > out.txt
 # remove "searchTerm" from file
 grep -vE 'term1|term2|term3' file.txt > out.txt
 
+# Sort file on #column
+sort -nrk13 file.txt > out.txt
+# r = reverse sort
+# n = numerical sort
+# k = providing key 
+
 exit 
