@@ -13,8 +13,11 @@ rm file.txt
 # move column to front
 awk '{print $6,$0}' file.txt > out.txt
 
-# reorder colums 
+# reorder columns 
 awk '{print $2, $5, $4, $1, $3}' file.txt > out.txt
+
+# concatenate columns with : as separator
+awk ' {print $1 ":" $2}' file.txt > out.txt
 
 # make \t delimed 
 sed -i 's/ /\t/g' file.txt
