@@ -1,0 +1,13 @@
+# Show hidden folders? 
+umask 007
+
+# Make aliases
+alias R="/software/bin/R-3.2.2"
+alias ll='ls -l'
+ 
+# TMUX extis save history: 
+if [ -z "$TMUX" ]; then
+echo $DISPLAY > /user/.display
+fi
+
+ 
